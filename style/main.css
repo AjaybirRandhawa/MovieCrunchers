@@ -1,0 +1,117 @@
+html,
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p {
+  position: relative; /* avoids blanking in ie */
+} 
+
+header {
+  background-color: #111;
+}
+
+.no-radius .search {
+  color: #ababab;
+  border: none;
+  border-bottom: 2px solid#060606;
+  border-radius: 4px 0 0 0;
+  background-color: #060606;
+}
+
+.no-radius #submit {
+  border: none;
+  color: #ababab;
+  border-bottom: 2px solid#060606;
+  background-color: #060606;
+  border-radius: 0 4px 0 0;
+}
+
+.no-radius .search:focus {
+  color: white;
+  background-color: #1f1f1f;
+  border-bottom: 2px solid #bb86fc;
+  box-shadow: none;
+}
+
+.no-radius .search:focus + #submit {
+  color: white;
+  box-shadow: none;
+  background-color: #1f1f1f;
+  border-bottom: 2px solid #bb86fc;
+}
+#searchMobile .search {
+  background-color: #111;
+  border: none;
+} 
+.dropdown-menu {
+  min-width: 5rem;
+  overflow: hidden;
+  top: 110%;
+  border: none;
+  background-color: #111;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: inherit;
+  color: white;
+}
+
+.dropdown-item button {
+  margin: 1%;
+}
+
+.btn-pink {
+  background-color: #08050a;
+  border-color: #bb86fc;
+  color: #bb86fc;
+}
+
+.btn-pink:hover {
+  background-color: #17101f;
+  color: #bb86fc;
+  border-color: #bb86fc;
+}
+.accountOn .dropdown-toggle {
+  display: block;
+}
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.splash {
+  margin: 10% auto auto auto;
+  width: 50%;
+  text-align: center;
+}
+.splash h2 {
+  margin-bottom: 10%;
+}
+.fa-input {
+  font-family: FontAwesome, ‘Helvetica Neue’, Helvetica, Arial, sans-serif;
+}
+footer {
+  position: absolute;
+  bottom: 2%;
+  width: 50%;
+  left: 45.5%;
+}
+footer a {
+  margin: 2.5%;
+  color: #4a4a4a;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ababab;
+  text-decoration: none;
+}

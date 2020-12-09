@@ -1,0 +1,25 @@
+
+.bord{
+    border-bottom: #bb86fc solid 2px;
+    margin: 5%;
+}
+h2{
+    padding:5px;
+    padding-left: 0px;
+    color: #bb86fc;
+}
+p, li{
+    color:lightgray;
+}
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  ul li::before {
+    content: "\2022";
+    color: #bb86fc; /* Change the color */
+    font-weight: bold;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 2em;
+    margin-left: -1em;
+  }

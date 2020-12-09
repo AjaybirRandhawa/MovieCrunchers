@@ -1,0 +1,226 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* let 2 cols display side by side */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+/* format image */
+#loginImg {
+  left: 20%;
+  position: relative;
+  top: 20%;
+  width: 50%;
+}
+/* format form*/
+
+form {
+  background-color: #bb86fc;
+  border: #bb86fc solid 1px;
+  width: 60%;
+  height: 60vh;
+  border-radius: 1.5rem;
+}
+
+/* display form at the center of the 2nd col */
+.align-items-center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 0px solid#BB86FC;
+}
+
+#error {
+  position: relative;
+  bottom: 1.5vh;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin-top: 2vh;
+  font-weight: 900;
+}
+
+/* format inputfield and placeholder */
+input {
+  background-color: #060606;
+  border: none;
+  color: white;
+  border-radius: 4px 4px 0 0;
+  font-size: 2.5vh;
+  font-weight: 800;
+  font-style: bold;
+  margin-top: 8%;
+  width: 18vw;
+  max-width: 100%;
+  height: 7vh;
+  padding-left: 1.5vw;
+}
+input::placeholder {
+  font-family: FontAwesome, ‘Helvetica Neue’, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: #8a8a8a;
+}
+input:focus {
+  background-color: #1f1f1f;
+  outline: none;
+}
+input:focus::placeholder {
+  color: white;
+}
+
+/* format sign in button */
+
+button {
+  margin: auto;
+  font-size: 16px;
+  background-color: #08050a;
+  color: #bb86fc;
+  border: 1px #121212;
+  font-weight: lighter;
+  width: 12vw;
+  overflow: hidden;
+  margin-top: 8%;
+  height: 6vh;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #17101f;
+  cursor: pointer;
+}
+/* make the background curved */
+
+#loginSphere {
+  border-bottom-right-radius: 95%;
+  background-color: #bb86fc;
+}
+h3 {
+  font-weight: 550;
+  font-size: inherit;
+}
+
+/* format for register page */
+
+#register {
+  height: 72vh;
+  margin-top: 6%;
+}
+#register input {
+  margin-top: 5%;
+}
+#register button {
+  margin-top: 5%;
+}
+
+.forgot-part {
+  color: black;
+  text-decoration: none;
+  font-size: 2vh;
+  margin-top: 3vh;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+#title {
+  width: 50%;
+  position: absolute;
+  top: 7vh;
+  left: 13vw;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1024px) {
+  .row {
+    display: block;
+  }
+  .col {
+    width: 100%;
+    height: 50%;
+  }
+  #title {
+    width: 50%;
+    position: absolute;
+    top: -95%;
+    left: 25%;
+    min-width: 15rem;
+  }
+  #loginImg {
+    left: 40%;
+    position: relative;
+    top: 22%;
+    width: 20%;
+    min-width: 10rem;
+  }
+  #error {
+    position: relative;
+    bottom: 1.75vh;
+  }
+
+  #loginSphere {
+    border-bottom-right-radius: 0;
+    background-color: black;
+  }
+  form {
+    background-color: #bb86fc;
+    border: #bb86fc solid 1px;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10vw 10vw 0 0;
+  }
+
+  input {
+    margin-top: 3%;
+    width: 60%;
+  }
+  .forgot-part {
+    margin-top: 1vh;
+  }
+  button {
+    margin-top: 3%;
+    width: 40%;
+  }
+  #register {
+    height: 60vh;
+  }
+  #register input {
+    margin-top: 1.5%;
+  }
+  #register button {
+    position: relative;
+    margin-top: 1.5%;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1460px) {
+  form {
+    background-color: #bb86fc;
+    border: #bb86fc solid 1px;
+    width: 70%;
+    height: 60vh;
+    border-radius: 1.5rem;
+  }
+  input {
+    width: 60%;
+  }
+}

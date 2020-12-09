@@ -1,0 +1,53 @@
+#movieData img {
+    width:100%;
+}
+#movieData p {
+    color: #a0a0a0;
+    font-size: 12px;
+}
+#movieData #notFav {
+    box-shadow: none;
+    color: #4a4a4a;
+    border-color: #4a4a4a;
+}
+#movieData #fav{
+    box-shadow: none;
+}
+#movieData h5 {
+    font-weight: 400;
+}
+#movieData h1,#movieData h4 {
+    width: 90%;
+    font-weight: 900;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#movieData textarea {
+    border: none;
+    resize: none;
+    overflow: hidden;
+    color: white;
+    font-weight: 500;
+    border-radius: 4px 4px 0 0;
+    background-color: black;
+}
+#movieData #reviewTextEdit {
+    background-color:#0E0E0E;
+    border-bottom: 2px #0E0E0E solid;
+}
+#movieData textarea::placeholder{
+    font-weight: 500;
+    color: #8a8a8a;
+}
+#movieData #reviewTextEdit:focus {
+    box-shadow: none;
+    border-bottom: 2px #BB86FC solid;
+    background-color: #1f1f1f;
+}
+#movieData a {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    color: #BB86FC;
+    text-decoration: none;
+}

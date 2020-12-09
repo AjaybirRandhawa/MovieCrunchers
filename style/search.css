@@ -1,0 +1,34 @@
+/* CSS for search component (might want to move to main) */
+#searches {
+    margin: 0;
+    padding: 0;
+}
+#searches a{
+    color: white;
+}
+#searches a:hover{
+    text-decoration: none;
+}
+#searches img{
+    width:100%;
+    height: 75%;
+}
+#searches .text{
+    width:100%;
+}
+#searches p {
+    color: #a0a0a0;
+    font-size: 12px;
+    margin: 1%;
+}
+h1 {text-align: center;
+    width: 100%;
+    font-size: 48px;
+    font-weight: 900;
+    margin:2% 0 3% 0;   
+}
+#searches h4{
+    font-weight: 900;
+    font-size: 24px;
+    margin: 1%;
+}
