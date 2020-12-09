@@ -1,8 +1,8 @@
 html,
 body {
+  padding: 0;
   font-family: "Roboto", sans-serif;
   margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: black;
   color: rgb(177, 174, 174);
