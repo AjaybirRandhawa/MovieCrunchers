@@ -83,17 +83,21 @@ function echoJson($request){ //Picks function & returns json
     header('Access-Control-Allow-Origin: *');
     header('Content-Type: application/json; charset=utf-8');
     if($request["type"]=="name"){
-        $data["success"] = getName($request["param"])[0];
-        $data["value"] = getName($request["param"])[1];
+        $return = getName($request["param"]);
+        $data["success"] = $return[0];
+        $data["value"] = $return[1];
     }elseif($request["type"]=="hash"){
-        $data["success"] = isHashEqual($request["param"])[0];
-        $data["value"] = isHashEqual($request["param"])[1];
+        $return = isHashEqual($request["param"]);
+        $data["success"] = $return[0];
+        $data["value"] = $return[1];
     }elseif($request["type"]=="login"){
-        $data["success"] = isPassCorrect($request)[0];
-        $data["value"] = isPassCorrect($request)[1];
+        $return =isPassCorrect($request);
+        $data["success"] = $return[0];
+        $data["value"] = $return[1];
     }elseif($request["type"]=="id"){
-        $data["success"] = getID($request["param"])[0];
-        $data["value"] = getID($request["param"])[1];
+        $return = getID($request["param"]);
+        $data["success"] = $return[0];
+        $data["value"] = $return[1];
     }elseif($request["type"]=="register"){
         $return = register($request);
         $data["success"] = $return[0];
