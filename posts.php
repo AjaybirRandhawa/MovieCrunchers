@@ -71,8 +71,9 @@ function echoJson($req){ #SENDS POST DATA TO METHOD, GETS BACK JSON & PRINTS IT
         header('Access-Control-Allow-Origin: *');
         header('Content-Type: application/json; charset=utf-8');
         if($req["type"]=="getPosts"){
-                $data["success"] = getPostsByMovie($req)[0];
-                $data["value"] = getPostsByMovie($req)[1];
+                $return = getPostsByMovie($req);
+                $data["success"] = $return[0];
+                $data["value"] = $return[1];
         }
         if($req["type"]=="makePost"){
                 $a = addPostToMovie($req);
