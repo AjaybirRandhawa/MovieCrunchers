@@ -61,8 +61,9 @@ function getOrGenMovieData($req){ #THIS FUNCTION TAKES AN IMDB MOVIE ID, AND WIL
 function echoJson($req){ #CONVERT ASSOC. ARRAY INTO JSON.
     header('Access-Control-Allow-Origin: *');
     header('Content-Type: application/json; charset=utf-8');
-    $data["success"] = getOrGenMovieData($req)[0];
-    $data["value"] = getOrGenMovieData($req)[1];
+    $mData = getOrGenMovieData($req);
+    $data["success"] = $mData[0];
+    $data["value"] = $mData[1];
     echo json_encode($data);
 }
 
