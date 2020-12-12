@@ -19,9 +19,11 @@ Fields are below:
 -F 'movie'=(Movie ID, as string)  
 
 Eg: Will get posts for Guardians of the Galaxy Vol. 2:
+
 ``curl https://raynorelgie.com/MovieCrunchers/posts.php -F 'type'='getPosts' -F 'movie'='tt3896198'``
 
 Here is a return when there was posts for a movie.
+
 ``{"success":true,"value":[{"id":"1","rating":"4","author":"2","text":"It was alright I suppose","date":"2020-11-15"},{"id":"2","rating":"5","author":"1","text":"It was good.","date":"2020-11-15"}]}``
 
 - To make a post:  
@@ -58,7 +60,7 @@ Find sample login/registration form at sampleLogin.php
 -F 'type'='getData' (Field unused, may be used if movies.php API expanded Can be omitted until then)  
 -F 'movie'='(Movie ID, as string)'  
 
-Eg: Will return name, poster, release date, genre, & plot of a movie.  
+Eg: Will return name, poster, release date, genre, & plot of a movie:  
 
 ``curl https://raynorelgie.com/MovieCrunchers/movies.php -F 'type'='getdata' -F 'movie'='tt3896198'``
 
