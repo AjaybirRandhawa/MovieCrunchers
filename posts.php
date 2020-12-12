@@ -32,7 +32,7 @@ function getPostsByMovie($req){ #LOOKS FOR REVIEWS IN THE DATABASE, $req["movie"
 function getPostsByUser($req){ #LOOKS FOR USER'S REVIEWS IN THE DATABASE, $req["user"] HOLDS AUTHOR. RETURNS IN ASSOC. ARRAY.
         global $dbName, $dbPass;
 
-        $mysqli = mysqli_connect("localhost", "root", $dbPass, "relgie")
+        $mysqli = mysqli_connect("localhost", "root", $dbPass, "[Redacted]")
         or die(mysql_error());
         $user = $req["user"];
 
@@ -54,7 +54,7 @@ function getPostsByUser($req){ #LOOKS FOR USER'S REVIEWS IN THE DATABASE, $req["
 function addPostToMovie($req){ #ADDS A REVIEW TO DATABASE, GIVEN TITLE ID, USERID, RATING, REVIEW TEXT.
     global $dbName, $dbPass;
 
-    $mysqli = mysqli_connect("localhost", "root", $dbPass, "relgie")
+    $mysqli = mysqli_connect("localhost", "root", $dbPass, "[Redacted]")
     or die(mysql_error());
 
     $movie = $req["movie"];
@@ -83,7 +83,7 @@ function echoJson($req){ #SENDS POST DATA TO METHOD, GETS BACK JSON & PRINTS IT
         echo json_encode($data);
 }
 
- $req["movie"] = "tt3896198";
+ $req["movie"] = "[Redacted]";
 # echoJson($req);
 
 //$req["userid"] = 1;
