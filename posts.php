@@ -1,7 +1,7 @@
 <?php
 
 
-$mysqli = mysqli_connect("localhost", "root", $dbPass, "relgie")
+$mysqli = mysqli_connect("localhost", "root", $dbPass, "[Redacted]")
 or die(mysql_error());
 
 #$query = mysqli_query($mysqli, "create table Posts(id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, rating TINYINT, author INT(6), text MEDIUMTEXT, date DATE, movie VARCHAR(20));");
@@ -9,7 +9,7 @@ or die(mysql_error());
 function getPostsByMovie($req){ #LOOKS FOR REVIEWS IN THE DATABASE, $req["movie"] HOLDS TITLE ID. RETURNS IN ASSOC. ARRAY.
     global $dbName, $dbPass;
 
-    $mysqli = mysqli_connect("localhost", "root", $dbPass, "relgie")
+    $mysqli = mysqli_connect("localhost", "root", $dbPass, "[Redacted]")
     or die(mysql_error());
     $movie = $req["movie"];
     $query = mysqli_query($mysqli, "SELECT id, rating, author, text, date FROM Posts WHERE movie='$movie' ");
