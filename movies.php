@@ -1,10 +1,10 @@
 <?php
 
 
-$dbName = "relgie"; 
+$dbName = "[Redacted]"; 
 $dbPass = "X"; //Change pass to yours
 
-$mysqli = mysqli_connect("localhost", "root", $dbPass, "relgie") //Change root to your username, relgie to your db name. Also do this in the other connections.
+$mysqli = mysqli_connect("localhost", "root", $dbPass, "[Redacted]") //Change root to your username, relgie to your db name. Also do this in the other connections.
 or die(mysql_error());
 
 #$query = mysqli_query($mysqli, "create table Movies(name VARCHAR(70), posterImg varchar(200), released VARCHAR(20), genre VARCHAR(40), plot MEDIUMTEXT, id VARCHAR(15));");
@@ -14,7 +14,7 @@ function getOrGenMovieData($req){ #THIS FUNCTION TAKES AN IMDB MOVIE ID, AND WIL
     global $dbName;
     global $dbPass;
 
-    $mysqli = mysqli_connect("localhost", "root", $dbPass, "relgie")
+    $mysqli = mysqli_connect("localhost", "root", $dbPass, "[Redacted]")
     or die(mysql_error());
 
     $query = mysqli_query($mysqli, "SELECT name, posterImg, released, genre, plot, id FROM Movies WHERE id='$movie' ");
@@ -28,7 +28,7 @@ function getOrGenMovieData($req){ #THIS FUNCTION TAKES AN IMDB MOVIE ID, AND WIL
     } else {
         #Find from OMBDB
 
-        $curl = curl_init("http://www.omdbapi.com/?i=$movie&apikey=2f97c78a");
+        $curl = curl_init("http://www.omdbapi.com/?i=$movie&apikey=[Redacted]");
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         $response = curl_exec($curl);   
         curl_close($curl);
