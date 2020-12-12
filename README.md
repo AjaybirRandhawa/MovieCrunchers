@@ -71,4 +71,4 @@ This will return:
 
 
 # Authors
-This is a project developed by [Ajaybir Randhawa](https://github.com/AjaybirRandhawa), [Raynor Elgie](https://raynorelgie.com/),[Finn Huynh](https://www.linkedin.com/in/finn-huynh/), and [Maximillian Bellevile](https://www.linkedin.com/in/belleville-max/). We hope you check out our site at: https://raynorelgie.com/MovieCrunchers/
+This is a project developed by [Ajaybir Randhawa](https://github.com/AjaybirRandhawa), [Raynor Elgie](https://raynorelgie.com/), [Finn Huynh](https://www.linkedin.com/in/finn-huynh/), and [Maximillian Bellevile](https://www.linkedin.com/in/belleville-max/). We hope you check out our site at: https://raynorelgie.com/MovieCrunchers/
