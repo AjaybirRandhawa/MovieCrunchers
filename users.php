@@ -2,10 +2,10 @@
 <?php
 
 
-$dbName = "relgie";//REPLACE WITH YOUR DB INFO (& other occurences of "relgie")
-$dbPass = "XXXXx";
+$dbName = "[Redacted]";//REPLACE WITH YOUR DB INFO
+$dbPass = "XXXXX";
 
-$mysqli = mysqli_connect("localhost", $dbName, $dbPass, "relgie")   //Establish connection to DB
+$mysqli = mysqli_connect("localhost", $dbName, $dbPass, "[Redacted]")   //Establish connection to DB
 or die(mysql_error());
 
 #$query = mysqli_query($mysqli, "CREATE TABLE Users (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, name VARCHAR(30) NOT NULL, hash VARCHAR(255) NOT NULL);");
@@ -14,7 +14,7 @@ or die(mysql_error());
 function getID($name){ //Get user's ID based on name
     global $dbName, $dbPass;
     
-    $mysqli = mysqli_connect("localhost", $dbName, $dbPass, "relgie") 
+    $mysqli = mysqli_connect("localhost", $dbName, $dbPass, "[Redacted]") 
     or die(mysql_error());
     
     $query = mysqli_query($mysqli, "SELECT id FROM Users WHERE name='$name' "); //Query matching info
@@ -29,7 +29,7 @@ function getID($name){ //Get user's ID based on name
 
 function getName($id){ //Get user's name based on ID
     global $dbName, $dbPass;
-    $mysqli = mysqli_connect("localhost", $dbName, $dbPass, "relgie") 
+    $mysqli = mysqli_connect("localhost", $dbName, $dbPass, "[Redacted]") 
     or die(mysql_error());
     $query = mysqli_query($mysqli, "SELECT name FROM Users WHERE id='$id' ");
     
@@ -43,7 +43,7 @@ function getName($id){ //Get user's name based on ID
 
 function isHashEqual($id, $hash){ //Is hash given = to hash on record?
     global $dbName, $dbPass;
-    $mysqli = mysqli_connect("localhost", $dbName, $dbPass, "relgie") 
+    $mysqli = mysqli_connect("localhost", $dbName, $dbPass, "[Redacted]") 
     or die(mysql_error());
     $query = mysqli_query($mysqli, "SELECT hash FROM Users WHERE id='$id' ");
     if (mysqli_num_rows($query) > 0) {
@@ -61,7 +61,7 @@ function isPassCorrect($request){ //Given name and pass, validates it against th
     $name = $request["name"];
     $pass = $request["pass"];
     global $dbName, $dbPass;
-    $mysqli = mysqli_connect("localhost", $dbName, $dbPass, "relgie") 
+    $mysqli = mysqli_connect("localhost", $dbName, $dbPass, "[Redacted]") 
     or die(mysql_error());
     $query = mysqli_query($mysqli, "SELECT hash FROM Users WHERE name='$name' ");
     
@@ -111,7 +111,7 @@ function echoJson($request){ //Picks function & returns json
 
 function register($request){
     global $dbName, $dbPass;
-    $mysqli = mysqli_connect("localhost", $dbName, $dbPass, "relgie") 
+    $mysqli = mysqli_connect("localhost", $dbName, $dbPass, "[Redacted]") 
     or die(mysql_error());
 
     #Validate
