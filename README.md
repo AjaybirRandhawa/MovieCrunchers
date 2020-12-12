@@ -55,7 +55,7 @@ Find sample login/registration form at sampleLogin.php
 **movies.php**  
 
 - Get Movie's Data: **Polls database, if no movie found in DB polls OMDB and adds it to DB.**  
-~~-F 'type'='getData'~~ (Field unused, may be used if movies.php API expanded Can be omitted until then)  
+-F 'type'='getData' (Field unused, may be used if movies.php API expanded Can be omitted until then)  
 -F 'movie'='(Movie ID, as string)'  
 
 Eg: Will return name, poster, release date, genre, & plot of a movie.  
