@@ -32,6 +32,7 @@ function focusOnSearch(){
     if($("#searchMobile").is(':visible')) $("#search2").focus()
     else $("#search").focus()
 }
+
 /* Reads every parameter found in the url parameter */
 function readParams(options) {
     //If parameter s(for search) exists do search
