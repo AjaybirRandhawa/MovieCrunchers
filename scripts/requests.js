@@ -1,7 +1,7 @@
 /*This is a little more complex so I will try and split it up more */
 let requests = {
         //First we have some simple api endpoints.
-        omdbApi: "https://www.omdbapi.com?apikey=2f97c78a&",
+        omdbApi: "https://www.omdbapi.com?apikey=[Redacted]",
         movieEndpoint: "https://raynorelgie.com/MovieCrunchers/movies.php",
         userEndpoint: "https://raynorelgie.com/MovieCrunchers/users.php",
         postEndpoint: "https://raynorelgie.com/MovieCrunchers/posts.php",
