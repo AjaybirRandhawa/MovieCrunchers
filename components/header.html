@@ -1,0 +1,40 @@
+<nav class="navbar pr-0 navbar-expand-lg navbar-dark">
+    <a id="brand" class="navbar-brand mr-0" href="./"><img class="noBanner" src="assets/title.svg" width="75%"></a>
+    <form id="searchMobile" action="search.html" class="no-radius">
+     <input type="text" name="s" id="search2" class="search" placeholder="Search for Movies">
+     </form>
+    <div>
+        <div class="accountOff btn-group mr-2">
+           <input type="button" onclick="searchMobile(this)" class="fa navbar-toggler mr-2" value="&#xf002;"></input>
+            <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="fa fas fa-bars"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="login.html"><button type="button" class="btn btn-outline-light btn-pink">Sign In</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto"> </ul>
+        <form action="search.html" class="form-inline no-radius">
+            <input type="text" name="s" class="form-control search" id="search" placeholder="Search for Movies">
+            <input type="submit" id="submit" class="form-control fa-input" value="&#xf002;">
+            <div class="accountOff">
+                <a href="login.html" class="ml-5 mr-2"><button type="button" class="btn btn-outline-light btn-pink">Sign In</button></a>
+            </div>
+        </form>
+    </div>
+    <div class="btn-group ml-lg-5 mr-2 accountOn">
+        <input type="button" onclick="searchMobile(this)" class="fa navbar-toggler mr-2" value="&#xf002;"></input>
+        <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fa fas fa-bars"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="account.html?u=ID"><button type="button" class="btn btn-outline-light btn-pink">Account</button></a>
+            <a class="dropdown-item" onclick="clearSession()" href="./"><button type="button" class="btn btn-outline-light btn-pink">Sign out</button></a>
+        </div>
+    </div>
+    </div>
+</nav>
