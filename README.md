@@ -2,6 +2,7 @@
 Final project done in collaboration with 3 others.
 
 ## Goal
+
 Welcome to the newly created MovieCrunchers, the world’s preeminent destination for movie criticism, commentary and community.
         MovieCrunchers is currently one of the latest movie reviewing sites that are available on the internet. Since most of the 
         internet users around the world are using online services to watch movies online, we inspired ourselves to make a place
