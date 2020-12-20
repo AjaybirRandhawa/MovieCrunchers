@@ -1,0 +1,27 @@
+<div class="col-lg-3 col-md-3 col-sm-4">
+  <img onerror="this.onerror=null;this.src='assets/imgnotfound.svg';" src="SOURCE"></img>
+</div>
+<div class="col-sm-8">
+  <div class="row">
+    <h1 class="col-lg-10 col-sm-9">TITLE</h1>
+    <button class="REVIEW EDITR col-lg-2 col-sm-3 btn btn-outline-light btn-pink" id="notFav" onclick="addFav(this)"><i
+        class="fa fa-heart"></i> Favourite</button>
+  </div>
+  <p>GENRE | DATE</p>
+  <h5>PLOT</h5>
+  <div class="ADDC mt-5 py-5">
+    <a href="movies.html?r=ID&ru=USER"><button type="button" class="btn btn-outline-light btn-pink">Add To
+        Collection</button></a>
+  </div>
+</div>
+<div class="col-12">
+  <div class="REVIEW mt-2">
+    <h1 class="ml-2"> Review </h1>
+      <textarea class="form-control EDITR mt-2" id="reviewTextEdit" wrap="hard" rows="15" cols="100" name="text"
+        placeholder="Enter Review" oninput="updateSize(this)"></textarea>
+      <textarea disabled class="form-control SHOWR  mt-2" wrap="hard" id="reviewText" cols="100"
+        name="text"></textarea>
+    <button onclick="postReview()" class="EDITR  mt-2 btn btn-outline-light btn-pink">Submit Review</button>
+  </div>
+   <div class="row GETR mt-2" id="reviews"></div>
+</div>
